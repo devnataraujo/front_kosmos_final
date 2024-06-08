@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netuno | Cosmos</title>
+    <link rel="icon" href="/assets/img/logo_url.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/interno_netuno.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="col">
+                <a href="/game/home" class="back-icon" id="backIconLink">
+                    <i class="bi bi-arrow-left-circle" id="backIcon"></i>
+                </a>
+                <p class="user-name">
+                    Olá, <span id="user_name">Usuário</span>
+                </p>
+            </div>
+            <div class="col">
+                <p class="user-points">
+                    Pontos: <span id="user_points">0000</span>
+                </p>
+                <p class="logo-name">
+                    COSMOS
+                </p>
+            </div>
+        </nav>
+    </header>
+    <div class="content" id="content">
+        <div class="page-one" id="page_one">
+            <h1 class="title-content">
+                COMEÇANDO A JORNADA
+            </h1>
+            <div class="historia" id="part_one">
+
+                <div class="row row-one">
+                    <div class="col">
+                        <img src="/assets/img/_1_netuno.png" alt="">
+                    </div>
+                </div>
+                <div class="row row-two">
+                    <div class="col">
+                        <img src="/assets/img/_2_netuno.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="/assets/img/_3_netuno.png" alt="">
+                    </div>
+                </div>
+                <div class="row row-three">
+                    <button onclick="next('um')">PRÓXIMA PÁGINA</button>
+                </div>
+            </div>
+            <div class="historia" id="part_two">
+                <div class="row row-one">
+                    <div class="col">
+                        <img src="/assets/img/_4_netuno.png" alt="">
+                    </div>
+                </div>
+                <div class="row row-two">
+                    <div class="col">
+                        <img src="/assets/img/_5_netuno.png" alt="">
+                    </div>
+                </div>
+                <div class="row row-three">
+                    <button onclick="next('dois')">PRÓXIMA PÁGINA </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-two" id="page_two">
+        <div class="header">
+            <h1>
+                Netuno e as variáveis
+            </h1>
+            <hr>
+        </div>
+        <div class="content-two">
+            <div class="row">
+                <div class="planeta-img">
+                    <img src="/assets/img/planeta_netuno.png" alt="">
+                </div>
+                <div class="text">
+                    <p>
+                        A primeira coisa que precisamos aprender antes de sairmos de Netuno é sobre as variáveis.
+                        <br>Variáveis são caixinhas que guardam coisas.
+                        <br>Essas caixinhas são pequenas e só deixam guardar uma única coisa.
+                        <br>Você pode declarar variáveis assim:
+                    </p>
+
+                    <div class="code-box">
+                        <div class="box-head">
+                            <i class="bi bi-circle-fill green"></i>
+                            <i class="bi bi-circle-fill red"></i>
+                            <i class="bi bi-circle-fill yellow"></i>
+                        </div>
+                        <div class="box-body">
+                            <p>
+                                <i class="bi bi-box-seam"></i>
+                                <span style="font-weight: bolder;">var</span> caixaUm = "Banana";
+                                <br>
+                                <i class="bi bi-box-seam"></i>
+                                <span style="font-weight: bolder;">var</span> caixaDois = "Maçã";
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        Quando você precisar da Banana é so você pegar a caixaUm.
+                        Quando você precisar da Maçã é só pegar a caixaDois.
+                        <br>
+                        Você pode mudar o que está dentro da caixa, mas só pode guardar uma coisa por vez.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row-two">
+                <div class="text">
+                    <p>
+                        Outra coisa legal para saber sobre as variáveis é que elas podem guardar coisas diferentes como
+                        números e palavras, e no nosso caso, os objetos da missão.
+                        <br> Nós também podemos dar o nome que quisermos para as variáveis, como no código abaixo:
+                    </p>
+
+                    <div class="code-box">
+                        <div class="box-head">
+                            <i class="bi bi-circle-fill green"></i>
+                            <i class="bi bi-circle-fill red"></i>
+                            <i class="bi bi-circle-fill yellow"></i>
+                        </div>
+                        <div class="box-body">
+                            <p>
+                                <i class="bi bi-box-seam"></i>
+                                <span style="font-weight: bolder;">var</span> Foguete = "Combustivel";
+                                <br>
+                                <i class="bi bi-box-seam"></i>
+                                <span style="font-weight: bolder;">var</span> Planeta = "Netuno";
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-next">
+                <button onclick="next('tres')">
+                    IR PARA A MISSÃO
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="page-three" id="page_three">
+        <div class="header">
+            <h1>
+                Netuno e as variáveis
+            </h1>
+            <hr>
+        </div>
+        <div class="content-three">
+            <div class="row">
+                <div class="text">
+                    <p>
+                        Agora que você já sabe o que são variáveis e como declará-las, é hora de colocar em prática.
+                        <br> Nossa missão é levar os objetos da missão para o próximo planeta, você precisa guardar os objetos em variáveis para poder levar para a próxima etapa.
+                        <br> Vamos lá?
+                    </p>
+                </div>
+                <div class="code-box">
+                    <div class="box-head">
+                        <i class="bi bi-circle-fill green"></i>
+                        <i class="bi bi-circle-fill red"></i>
+                        <i class="bi bi-circle-fill yellow"></i>
+                    </div>
+                    <div class="box-body">
+                        <p class="comentario">// este é o meu</p>
+                        <p>
+                            <i class="bi bi-box-seam"></i>
+                            <span style="font-weight: bolder;">var</span> caixaUm = "Combustível";
+                            <br>
+                            <i class="bi bi-box-seam"></i>
+                            <span style="font-weight: bolder;">var</span> caixaDois = "Maçã";
+                        </p>
+                    </div>
+                </div>
+                <div class="frase">
+                    <p>
+                        Agora é sua vez, pegue o combustível no mercadinho e sua comida preferida.
+                        <br>Escreva o Javascript no Gatonet, ele é o responsável por guardar os nossos códigos.
+                    </p>
+                    <div class="personagem">
+                        <img src="/assets/img/gatonet.png" alt="">
+                    </div>
+                </div>
+                <div class="code-box">
+                    <div class="box-head">
+                        <i class="bi bi-circle-fill green"></i>
+                        <i class="bi bi-circle-fill red"></i>
+                        <i class="bi bi-circle-fill yellow"></i>
+                    </div>
+                    <div class="box-body">
+                        <div class="col">
+                            <div class="code">
+                                <p class="comentario">// este é o meu</p>
+                                <div class="caixa">
+                                    <p>
+                                        <i class="bi bi-box-seam"></i>
+                                        <span style="font-weight: bolder;">var</span> caixa_um =
+                                    </p>
+                                    <select name="escolha aqui" id="caixa_um">
+                                        <option value="n/a">Selecione aqui</option>
+                                        <option value="Combustivel"> Combustível</option>
+                                        <option value="Batata"> Batata</option>
+                                        <option value="Arroz"> Arroz</option>
+                                        <option value="Cobertor"> Cobertor</option>
+                                    </select>
+                                </div>
+                                <div class="caixa">
+                                    <p>
+                                        <i class="bi bi-box-seam"></i>
+                                        <span style="font-weight: bolder;">var</span> caixa_dois =
+                                    </p>
+                                    <input type="text" name="sua comida preferida" id="caixa_dois" class="caixa">
+                                </div>
+                            </div>
+                            <div class="persona">
+                                <img src="/assets/img/grin.png" alt="">
+                                <div class="text" id="box_status">
+                                    <p class="message" id="status" >
+                                        Não esqueça o combustível e a comida, eles são essenciais para a próxima etapa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-row" id="btn_avaliar">
+                    <button onclick="avaliar()" >
+                        <i class="bi bi-bag-check-fill"></i>
+                        Comprar itens
+                    </button>
+                </div>
+
+            </div>
+            <div class="row-two">
+                <button class="finalizar" onclick="finalizar()" id="btn_finalizar">
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                    Finalizar Missão
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="/assets/js/header.js"></script>
+<script>
+    var teste = 0;
+    // pegar nome do usuário no session storage
+    var user_name = sessionStorage.getItem('USER_NAME')
+    document.getElementById('user_name').innerHTML = user_name;
+
+    if(user_name == null || user_name == ''){
+        window.location.href = '/entrar';
+    }
+
+    function consultar_pontuacao(){
+        var user_id = sessionStorage.getItem('USER_ID');
+        fetch("http://localhost:3000/user/consultarPontuacao",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                "USER_ID": user_id
+            })
+        }).then(response => {
+            if(response.ok){
+                return response.json();
+            }else{
+                throw new Error("Erro ao tentar consultar pontuação");
+            }
+        }).then(data => {
+            if(data.status == 200){
+                console.log(data)
+                document.getElementById('user_points').innerHTML = data.data[0].total;
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+        });
+
+    }
+
+    consultar_pontuacao();
+
+    function next(part) {
+        if (part == 'um') {
+            document.getElementById('part_one').style.display = 'none';
+            document.getElementById('part_two').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+        if (part == 'dois') {
+            document.getElementById('page_one').style.display = 'none';
+            document.getElementById('page_two').style.display = 'block';
+            document.getElementById('content').style.display = 'none';
+            window.scrollTo(0, 0);
+        }
+        if (part == 'tres') {
+            document.getElementById('page_two').style.display = 'none';
+            document.getElementById('page_three').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    }
+
+    function avaliar(){
+        var caixa_um = document.getElementById('caixa_um').value;
+        var caixa_dois = document.getElementById('caixa_dois').value;
+
+        if(caixa_um == 'Combustivel' && caixa_dois != ''){
+            document.getElementById('status').innerHTML = 'Parabéns! Você conseguiu guardar os objetos da missão em variáveis. Agora é só levar para o próximo planeta.';
+            document.getElementById('status').style.color = 'green';
+            document.getElementById('box_status').style.border = '2px solid green';
+            document.getElementById('btn_finalizar').style.display = 'block';
+            document.getElementById('btn_avaliar').style.display = 'none';
+            teste = 1;
+        }else{
+            document.getElementById('status').innerHTML = 'Ops! Você não conseguiu guardar os objetos da missão em variáveis. Tente novamente.';
+            document.getElementById('status').style.color = 'red';
+            document.getElementById('box_status').style.border = '2px solid red';
+            teste = 0;
+        }
+    }
+
+    function finalizar(){
+        if(teste == 1){
+            window.location.href = '/game/niveis';
+        }else{
+            alert('Você precisa guardar os objetos da missão em variáveis para poder levar para a próxima etapa.');
+        }
+
+        // pontuar
+        var user_name = document.getElementById('user_name').innerHTML;
+        var data = {
+            USER_ID: sessionStorage.getItem('USER_ID'),
+            LEVEL_ID: 1,
+            POINTS : 100 
+        }
+
+        fetch('http://localhost:3000/user/pontuar', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+
+            
+    }
+</script>

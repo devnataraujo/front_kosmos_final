@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/img/logo_url.png" type="image/x-icon">
+    <title> Mensagem | Cosmos</title>
+    <link rel="stylesheet" href="/assets/css/message.css">
+</head>
+
+<body>
+    <div id="mensagem"></div>
+    <audio id="somTecla" src="/assets/music/keybord2.mp3" loop></audio>
+    <!-- Adicione o caminho para o arquivo de som aqui -->
+</body>
+
+</html>
+<script src="/assets/js/message.js"></script>
+<script>
+    var user_name = sessionStorage.getItem('USER_NAME')
+
+    if (user_name == null || user_name == '') {
+        window.location.href = '/entrar';
+    }
+
+</script>
