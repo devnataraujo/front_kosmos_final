@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assets/css/interno_home.css">
+    <link rel="icon" href="/assets/img/logo_url.png" type="image/x-icon">
+    <title> Home | Cosmos</title>
+</head>
+
+<body>
+    <main>
+        <header class="opcoes">
+            <nav>
+                <ul>
+                    <li><a href="/game/ranking"><i class="bi bi-trophy-fill"></i></a></li>
+                    <li><a href="/game/ajustes"><i class="bi bi-gear-fill"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="title">
+                <img src="/assets/img/COSMOS.png" alt="" class="logo">
+                <p class="text">
+                    &nbsp
+                    você está pronto pra missão?
+                    &nbsp
+                </p>
+            </div>
+            <div class="start">
+                <a href="/game/mensagem" class="play-button" onclick="playFunction()"> 
+                    <i class="bi bi-caret-right-fill"></i>
+                    PLAY
+                </a>
+                <a href="/game/ranking" class="play-button" onclick="playFunction()"> 
+                    <i class="bi bi-trophy-fill"></i>
+                    RANKING
+                </a>
+                <a href="/game/ajustes" class="play-button" onclick="playFunction()"> 
+                    <i class="bi bi-gear-fill"></i>
+                    AJUSTES
+                </a>
+
+            </div>
+        </div>
+        <footer>
+            <a href="/" alt="Sair" onclick="sair()">
+                <i class="bi bi-arrow-bar-left"></i>
+                <p>sair</p>
+            </a>
+        </footer>
+    </main>
+    <audio id="somFundo" src="/assets/music/home_theme.mp3" loop></audio>
+</body>
+
+</html>
+<script>
+    document.getElementById('somFundo').play();
+
+    var user_name = sessionStorage.getItem('USER_NAME')
+
+    if (user_name == null || user_name == '') {
+        window.location.href = '/entrar';
+    }
+
+    function sair() {
+        sessionStorage.clear();
+        window.location.href = '/home';
+    }
+
+</script>
