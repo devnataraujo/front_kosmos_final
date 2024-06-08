@@ -1,0 +1,610 @@
+/* Estilos para a página home */
+/* Path: public/assets/css/interno_home.css */
+
+/* ============================== CORES ============================== */
+:root {
+    --color-white: #FFFFFF;
+    --color-purple: #6A1B9A;
+    --color-blue: #0D47A1;
+    --color-yellow: #f3bb13;
+    --color-dark-blue: #0F1841;
+}
+
+/* ============================== FONTES ============================== */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf');
+
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('/assets/fonts/Montserrat-Thin.ttf');
+
+}
+
+@font-face {
+    font-family: 'MontserratExtraBold';
+    src: url('/assets/fonts/Montserrat-ExtraBold.ttf');
+
+}
+
+@font-face {
+    font-family: 'MontserratExtraBoldItalic';
+    src: url('/assets/fonts/Montserrat-ExtraBoldItalic.ttf');
+
+}
+
+@font-face {
+    font-family: 'MontserratSemiBoldItalic';
+    src: url('/assets/fonts/Montserrat-SemiBoldItalic.ttf');
+
+}
+
+@font-face {
+    font-family: 'made';
+    src: url('/assets/fonts/MADE Evolve Sans Bold EVO (PERSONAL USE).otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'IBM Plex Mono Regular';
+    src: url('../fonts/IBMPlexMono-Regular.ttf') format('truetype');
+}
+/* ==============================  ESTILO DO BODY ============================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/img/contato (1).png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+header{
+    height: 80px;
+    padding: 0 3vw;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav .col{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+header nav .col .back-icon{
+    font-size: 1.8rem;
+    color: var(--color-white);
+}
+
+header nav .col .user-name{
+    color: var(--color-white);
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+}
+
+header nav .col .user-points{
+    color: var(--color-white);
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+}
+
+header nav .col .user-points #user_points{
+    color: var(--color-white);
+    font-family: 'Montserrat-Bold';
+    font-size: 1.2rem;
+}
+
+header nav .col .logo-name{
+    color: var(--color-white);
+    font-family: 'made';
+    font-size: 1.4rem;
+}
+
+.content{
+    background-color: #f5f5f5;
+    background-image: url('/assets/img/texture_fundo.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 64px 64px 0 0;
+    margin-top: 0;
+    padding: 3vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.content .page-one .title-content{
+    color: var(--color-dark-blue);
+    font-family: 'MontserratExtraBoldItalic'; 
+    /* font-size: 1.8rem; */
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.content .page-one .historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.content .page-one .historia .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+
+.content .page-one .historia .row-three{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.content .page-one .historia .row-three button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    font-family: 'MontserratSemiBoldItalic';
+    background-color: #f5f5f5;
+    padding: 2vh 3vw;
+    border: #050405 solid 1px;
+}
+
+.content .page-one .historia .row-three button:hover{
+    background-color: #050405;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#part_one{
+    transition: all 0.3s;
+}
+
+#part_two{
+    display: none;
+    transition: all 0.3s;
+}
+
+#part_two .row{
+    margin-bottom: 2vh;
+}
+
+/* AULA */
+#page_two{
+    display: none;
+    background-color: #f5f5f5;
+    border-radius: 64px 64px 0 0;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    padding: 3vh 5vw;
+}
+
+#page_two .header{
+    display: flex;
+    color: #3264AE;
+    font-family: 'Montserrat-Bold';
+    justify-content: space-between;
+    align-items: center ;
+    gap: 2vw;
+    padding: 0 2vw 0 2vw;
+    /* background-color: aqua; */
+}
+
+#page_two .header hr{
+    border-top: #3264AE solid 1px;
+    height: 1px;
+    width: 62vw;
+    border-style: solid;
+    background-color: #3264AE;
+    border-radius: 10px;
+    text-align: right;
+    align-items: flex-end;
+    display: flex;
+}
+#page_two .content-two{
+    padding: 2vh 5vw;
+}
+
+#page_two .content-two .row{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    font-family: 'Montserrat'; 
+    margin-top: 5vh;
+}
+
+
+
+#page_two .content-two .row .planeta-img img{
+    height: 700px;
+}
+
+
+#page_two .content-two .row .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2vh 0 2vh 2vw;
+    width: 40vw;
+}
+
+#page_two .content-two .row .text p{
+    font-size: 1.4rem;
+    width: 40vw;
+    line-height: 2;
+    text-align: justify-all;
+}
+
+#page_two .content-two .row .text .code-box,
+.code-box{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 3vh 2vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    font-family: 'IBM Plex Mono Regular', monospace;
+    color: rgb(36, 36, 36);
+}
+
+#page_two .content-two .row .text .code-box .box-head,
+.code-box .box-head{
+    border-bottom: #cbcbcb solid 1px;
+    padding-bottom: 1vw;
+    display: flex;
+    gap: 10px;
+}
+
+#page_two .content-two .row .text .code-box .box-head .green,
+.code-box .box-head .green{
+    color: #4CAF50;
+}
+
+#page_two .content-two .row .text .code-box .box-head .red,
+.code-box .box-head .red{
+    color: #F44336;
+}
+
+#page_two .content-two .row .text .code-box .box-head .yellow,
+.code-box .box-head .yellow{
+    color: #FFEB3B;
+}
+
+#page_two .content-two .row-two .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    line-height: 2;
+    font-size: 1.4rem;
+    text-align: justify-all;
+}
+
+
+
+#page_two .content-two .btn-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#page_two .content-two .btn-next button{
+    background-color: #f3bb13;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: #944e38;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px #c77100;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'MontserratExtraBold';
+}
+
+#page_two .content-two .btn-next button:hover {
+    background-color: #ffcb10;
+}
+
+
+#page_three{
+    display: none;
+}
+
+
+
+#page_three .row{
+    margin-bottom: 2vh;
+}
+
+/* AULA */
+#page_three{
+    display: none;
+    background-color: #f5f5f5;
+    border-radius: 64px 64px 0 0;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    padding: 3vh 5vw;
+}
+
+#page_three .header{
+    display: flex;
+    color: #3264AE;
+    font-family: 'Montserrat-Bold';
+    justify-content: space-between;
+    align-items: center ;
+    gap: 2vw;
+    padding: 0 2vw 0 2vw;
+    /* background-color: aqua; */
+}
+
+#page_three .header hr{
+    border-top: #3264AE solid 1px;
+    height: 1px;
+    width: 62vw;
+    border-style: solid;
+    background-color: #3264AE;
+    border-radius: 10px;
+    text-align: right;
+    align-items: flex-end;
+    display: flex;
+}
+#page_three .content-three{
+    padding: 2vh 5vw;
+}
+
+
+#page_three .content-three .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat'; 
+}
+
+#page_three .content-three .row .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    line-height: 2;
+    font-size: 1.4rem;
+    text-align: justify-all;
+
+}
+
+
+#page_three .content-three .row .code-box,
+.code-box{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 3vh 2vw;
+    border-radius: 10px;
+    display: flex;
+    line-height: 2;
+    font-size: 1.4rem;
+    flex-direction: column;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    font-family: 'IBM Plex Mono Regular', monospace;
+    color: rgb(36, 36, 36);
+}
+
+#page_three .content-three .row .code-box .box-head,
+.code-box .box-head{
+    border-bottom: #cbcbcb solid 1px;
+    padding-bottom: 1vw;
+    display: flex;
+    gap: 10px;
+}
+
+#page_three .content-three .row .frase{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    align-items: center;
+
+}
+
+#page_three .content-three .row .frase p{
+    font-size: 1.4rem;
+    width: 50vw;
+    line-height: 2;
+    text-align: justify-all;
+
+
+}
+
+#page_three .content-three .row .frase .personagem{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    width: 250px;
+}
+
+#page_three .content-three .row .frase .personagem img{
+    width: 200px;
+}
+
+
+
+#page_three .content-three .row .code-box .box-body .col{
+    display: flex;
+    gap: 2vh;
+    justify-content: space-between;
+    padding-top: 2vh    ;
+}
+
+#page_three .content-three .row .code-box .box-body .col .code .comentario{
+    color: #949494;
+
+}
+
+#page_three .content-three .row .code-box .box-body .col .code .caixa{
+    display: flex   ;
+    gap: 2vw;
+    width: 50vw;
+    align-items: center;
+    margin-top: 1vh;
+}
+#page_three .content-three .row .code-box .box-body .col .code .caixa p{
+    margin: 0;
+}
+
+
+#page_three .content-three .row .code-box .box-body .col .code .caixa select{
+    width: 20vw;
+    height: 50px;
+    border-radius: 10px;
+    border:0;
+    background-color: #f5f5f5;
+    font-family: 'IBM Plex Mono Regular', monospace;
+    color: rgb(36, 36, 36);
+    font-size: 1.4rem;
+    padding-left: 1vw;
+}
+
+/* tirar linha preta */
+select:focus-visible {
+    outline-offset: 0px;
+    outline: none;
+    /* tirar estilo original */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+
+}
+
+#page_three .content-three .row .code-box .box-body .col .code .caixa input{
+    width: 20vw;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #f5f5f5;
+    font-family: 'IBM Plex Mono Regular', monospace;
+    color: rgb(36, 36, 36);
+    font-size: 1.4rem;
+    padding-left: 1vw;
+    margin-top: 0;
+}
+
+input:focus-visible {
+    outline-offset: 0px;
+    outline: none;
+}
+
+#page_three .content-three .row .code-box .box-body .col .persona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    gap: 2vh;
+}
+
+#page_three .content-three .row .code-box .box-body .col .persona img{
+    width: 200px;
+}
+
+#page_three .content-three .row .code-box .box-body .col .persona .text{
+    display: flex;
+    gap: 2vh;
+    padding: 1vh 1vw;
+    line-height: 2;
+    font-size: .8rem;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 1px #525252;
+    font-family: 'Montserrat-Bold';
+    background-color: #f5f5f5;
+    color: #525252;
+}
+
+#page_three .content-three .row .btn-row{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+#page_three .content-three .row .btn-row button{
+    background-color: #f3bb13;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: #944e38;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px #c77100;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'MontserratExtraBold';
+}
+
+#page_three .content-three .row-two {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+#page_three .content-three .row-two button{
+    background-color: #f3bb13;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: #944e38;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px #c77100;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'MontserratExtraBold';
+    display: none;
+}

@@ -1,0 +1,149 @@
+/* ============================== CORES ============================== */
+:root {
+    --color-white: #FFFFFF;
+    --color-purple: #6A1B9A;
+    --color-blue: #0D47A1;
+    --color-yellow: #f3bb13;
+}
+
+/* ============================== FONTES ============================== */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf');
+
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('/assets/fonts/Montserrat-Thin.ttf');
+
+}
+
+@font-face {
+    font-family: 'MontserratExtraBold';
+    src: url('/assets/fonts/Montserrat-ExtraBold.ttf');
+
+}
+
+@font-face {
+    font-family: 'made';
+    src: url('/assets/fonts/MADE Evolve Sans Bold EVO (PERSONAL USE).otf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ==============================  ESTILO DO BODY ============================== */
+
+body {
+    /*imagem preencha toda a tela*/
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/img/backClean.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    /* adicionar filtro rgb */
+    backdrop-filter: blur(2px);
+    /* background-color: rgba(32, 32, 32, 0.342); */
+
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
+    /* background-color: red; */
+    padding-right: 2vw;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.4rem;
+}
+
+header nav ul a:hover{
+    color: var(--color-yellow);
+}
+
+.content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 10vh; */
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgba(32, 32, 32, 0.342); */
+}
+
+.content .title{
+    font-family: 'Montserrat-Bold';
+    font-size: 3rem;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.content .ranking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+    width: 40vw;
+}
+
+.content .ranking .user{
+    background-color: #f3bb13;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 30px;
+    color: #944e38;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 4px #c77100;
+    font-weight: bold;
+    font-family: 'MontserratExtraBold';
+    display: flex;
+    align-items: center;
+    width: 25vw;
+}
+
+.content .ranking .user .info{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin-left: 2vw;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .ranking .user .posicao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: var(--color-white);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}

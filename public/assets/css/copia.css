@@ -1,0 +1,241 @@
+/* Estilos para a página home */
+/* Path: public/assets/css/home.css */
+
+/* ============================== CORES ============================== */
+:root {
+    --color-white: #FFFFFF;
+    --color-purple: #6A1B9A;
+    --color-blue: #0D47A1;
+    --color-yellow: #F2B90C;
+}
+
+/* ============================== FONTES ============================== */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/public/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('/public/assets/fonts/Montserrat-Bold.ttf');
+}
+
+/* ==============================  ESTILO DO BODY ============================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    background-image: url('/public/assets/img/fundo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ============================== ESTILO DO HEADER ============================== */
+.hd-home {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+    padding: 0vh 5vw;
+}
+
+.hd-options {
+    display: flex;
+    gap: 30px;
+}
+
+.hd-options .options {
+    display: flex;
+    gap: 30px;
+
+}
+
+.hd-options .options a {
+    color: var(--color-white);
+    text-decoration: none;
+
+}
+
+.hd-options .options a:hover {
+    border-bottom: var(--color-purple) 2px solid;
+}
+
+
+.hd-options .hd-btns a {
+    color: var(--color-purple);
+    text-decoration: none;
+    padding: 1vh 2vw;
+    font-family: Montserrat-Bold;
+    border-radius: 5px;
+    border: 3px solid var(--color-purple);
+}
+
+.hd-options .hd-btns a:hover {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+}
+
+/* ============================== ESTILO DO BANNER ============================== */
+
+.home-banner {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.home-banner .sc-grid {
+    /* background-color: red; */
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ============================== DEFINIÇÃO DO GRID ============================== */
+.home-banner .sc-grid .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    /* background-color: lightgrey; */
+}
+
+.grid-item-central {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    gap: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ============================== ESTILO DO TEXTO CENTRAL ==============================*/
+.home-banner .sc-grid .grid-container .grid-item .hm-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.home-banner .sc-grid .grid-container .grid-item .hm-texts .hm-title {
+    font-family: Montserrat-Bold;
+    margin: 0;
+}
+
+
+.home-banner .sc-grid .grid-container .grid-item .hm-texts .hm-title .hm-title-dstq {
+    color: var(--color-yellow);
+}
+
+.home-banner .sc-grid .grid-container .grid-item .hm-texts .hm-subtitle {
+    font-size: .6em;
+    font-family: Montserrat;
+    width: 40vw;
+    margin: 0;
+}
+
+.home-banner .sc-grid .grid-container .grid-item .hm-texts .hm-btn {
+    font-family: Montserrat-Bold;
+    padding: 1vh 2vw;
+    border-radius: 5px;
+    font-size: .6em;
+    border: 3px solid var(--color-white);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.home-banner .sc-grid .grid-container .grid-item .hm-texts .hm-btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+}
+
+
+/*============================== ESTILO DE PLANETA QUE RODA ==============================*/
+.planet-container {
+    width: 25vw;
+    height: 50vh;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.texture {
+    height: 100%;
+    width: 250%;
+    background-image: url('/public/assets/img/texture.png');
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: scrollTexture 100s linear infinite;
+}
+
+@keyframes scrollTexture {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: -1000px;
+    }
+}
+
+
+/* ============================== ESTILO DO GRINLOK ============================== */
+.planet-grinlok{
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.planet-grinlok .grinlok{
+    width: 5vw;
+}
+
+.planet-grinlok .marte{
+    width: 10vw;
+    margin-top: -4px
+}
+
+/* ============================== ESTILO DA LUA ============================== */
+.planet-moon{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* ============================== ESTILO DE URANO ============================== */
+.planet-urano{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-end;
+    width: 100%;
+}

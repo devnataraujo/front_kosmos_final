@@ -1,0 +1,214 @@
+:root{
+    --color-white: #FFFFFF;
+    --color-disabled: #c5c5c5a2;
+    --color-black: #111111;
+    --color-light-blue: #3264AE;
+    /* --color-blue: #0F0054; */
+    --font-light: montserratLight;
+    --font-logo: logo;
+    --font-bold: montserratBold;
+    --font-regular: montserrat;
+    --font-thin: montserratThin;
+    --color-purple: #6A1B9A;
+    --color-blue: #0D47A1;
+    --color-yellow: #F2B90C;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: montserratThin;
+    src: url("/fonts/Montserrat-Thin.ttf");
+}
+
+@font-face {
+    font-family: montserratLight;
+    src: url("/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: montserratBold;
+    src: url("/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face{
+    font-family: logo;
+    src: url("assets/fonts/MADE\ Evolve\ Sans\ Bold\ EVO\ \(PERSONAL\ USE\).otf")
+}
+
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    /*
+    background-image: url('../img/login.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    */
+
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    height: 100vh; /* 100% da altura da viewport */
+    background-image: url('../img/login.png');
+    background-size: cover; /* Garante que a imagem cubra todo o espaço */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+.content{
+    width: 40vw;
+}
+
+.content .form{
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.content .form .title{
+    color: var(--color-white);
+    margin-bottom: 2vh;;
+}
+
+.content .form .title h1{
+    font-family: var(--font-logo);
+    font-size: 3rem;
+}
+
+.content .form .title p{
+    font-family: var(--font-light);
+}
+
+.content .form .link{
+    font-family: var(--font-thin);
+    margin-top: 8vh;
+    color: var(--color-white);
+}
+
+.content .form .link a{
+    color: #BD2323;
+    font-family: var(--font-bold);
+    text-decoration: none;
+}
+
+.content .form .form-group{
+    margin-top: 5vh;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+.content .form .form-group .iconify{
+    font-size: 28px;
+}
+
+.content .form .form-group .eye{
+    margin-left: -4vw;
+}
+
+.content .form .form-group input[type="text"],
+.content .form .form-group input[type="password"]{
+    width: 75%;
+    height: 50px;
+    background: none;
+    border: var(--color-white) solid 2px;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: -40px;
+    padding-left:  40px;
+    outline: none;
+    font-family: var(--font-regular);
+}
+
+.content .form .form-group input[type="text"]::placeholder,
+.content .form .form-group input[type="password"]::placeholder{
+    color: #fff;
+}
+
+.content .form .form-group input[type="password"]::placeholder{
+    font-family: var(--font-bold);
+    font-size: 24px;
+}
+
+.content .form .btn-entar{
+    width: 85%;
+    height: 50px;
+    background: none;
+    border: var(--color-white) solid 2px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: var(--font-bold);    
+    margin-top: 5vh;
+    margin-left: -1vw;
+}
+
+
+.content .form .btn-entar:hover{
+    background-color: rgba(255, 255, 255, 0.576); ;
+    color: #fff;
+
+}
+
+
+.hd-home {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+    padding: 0vh 5vw;
+}
+
+.hd-options {
+    display: flex;
+    gap: 30px;
+}
+
+.hd-options .options {
+    display: flex;
+    gap: 30px;
+
+}
+
+.hd-options .options a {
+    color: var(--color-white);
+    text-decoration: none;
+
+}
+
+.hd-options .options a:hover {
+    border-bottom: var(--color-purple) 2px solid;
+}
+
+
+.hd-options .hd-btns a {
+    color: var(--color-purple);
+    text-decoration: none;
+    padding: 1vh 2vw;
+    font-family: Montserrat-Bold;
+    border-radius: 5px;
+    border: 3px solid var(--color-purple);
+}
+
+.hd-options .hd-btns a:hover {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+}
+
